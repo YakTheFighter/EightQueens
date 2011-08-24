@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
 		swap(q, n - 2, n - 1);
 		if (isSolution(q, n)) printSolution(q, n);
 		nextSolution(q, n);
-		getchar();
+		if (getchar() == 24) break;
 	}
 	return 0;
 }
