@@ -27,6 +27,10 @@ void swap(int *x, int i, int j) {
 	x[j] = t;
 }
 
+bool isSolution(const int *q, int n) {
+        return true;
+}
+
 void printSolution(const int *q, int n) {
 	for (int i = 0; i < n; i++) {
 		printf("%d ", q[i]);
@@ -70,7 +74,7 @@ int main(int argc, char* argv[])
 	}
 	while (1) {
 		swap(q, n - 2, n - 1);
-		printSolution(q, n);
+		if (isSolution(q, n)) printSolution(q, n);
 		nextSolution(q, n);
 		getchar();
 	}
